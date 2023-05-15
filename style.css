@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to left, red, blue);
+  min-height: 100vh;
+}
+.photos {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.photos div {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+}
+
+.photos div:hover {
+  transform: scale(120%);
+}
+.Jagoda {
+  background-image: url('./Jagoda.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Kamila {
+  background-image: url('./Kamila.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Ania {
+  background-image: url('./Ania.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tooltip {
+  position: absolute;
+  min-width: 100px;
+
+  padding: 20px 10px;
+  transform: translateX(10px) translateY(-80px);
+  border-radius: 10px;
+  background-color: rgb(0, 106, 255);
+  color: white;
+}
+.tooltip::after {
+  content: '';
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  transform: rotate(45deg);
+  background-color: inherit;
+  bottom: -10%;
+  left: 5%;
+}
